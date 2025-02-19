@@ -9,7 +9,7 @@ pool:
 steps:
 - task: Gradle@3
   inputs:
-    workingDirectory: '/Users/Navami.Gopan/Library/CloudStorage/OneDrive-EY/Documents/pipelines-android'
+    workingDirectory: ''
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
