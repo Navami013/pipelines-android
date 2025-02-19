@@ -28,7 +28,7 @@ steps:
     jdkVersionOption: '1.11'
     mavenVersionOption: 'Default'
     mavenOptions: '-Xmx3072m'
-  displayName: 'Maven Build'
+  displayName: Maven Build
 
 - task: CopyFiles@2
   inputs:
