@@ -20,6 +20,16 @@ steps:
     tasks: 'assembleDebug test'
   displayName: gradlew assembleDebug test
 
+- task: Maven@3
+  inputs:
+    mavenPomFile: 'pom.xml'
+    publishJUnitResults: false
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.11'
+    mavenVersionOption: 'Default'
+    mavenOptions: '-Xmx3072m'
+  displayName: 'Maven Build'
+
 - task: CopyFiles@2
   inputs:
     contents: '**/*.apk'
